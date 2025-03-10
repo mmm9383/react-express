@@ -1,0 +1,56 @@
+
+/* Direct theme overrides without media queries */
+/* Light mode styles */
+body.light .dark\:bg-gray-800,
+body.light .dark\:border-gray-700,
+body.light .dark\:text-gray-400,
+body.light .dark\:bg-gray-900,
+body.light .dark\:text-white,
+body.light .dark\:bg-blue-900\/20,
+body.light .dark\:bg-orange-900\/20,
+body.light .dark\:bg-red-900\/20,
+body.light .dark\:bg-green-900\/20,
+body.light [class*="dark\:"] {
+  /* Reset dark styles in light mode */
+  background-color: initial !important;
+  border-color: initial !important;
+  color: initial !important;
+}
+
+/* Dark mode styles - explicitly applied without media queries */
+body.dark .dark\:bg-gray-800 {
+  background-color: #113457 !important;
+}
+
+body.dark .dark\:border-gray-700 {
+  border-color: #1e74ff40 !important;
+}
+
+body.dark .dark\:text-gray-400 {
+  color: #9ca3af !important;
+}
+
+body.dark .dark\:bg-gray-900 {
+  background-color: #111827 !important;
+}
+
+body.dark .dark\:text-white {
+  color: #ffffff !important;
+}
+
+/* Dark backgrounds for various colored elements */
+body.dark .dark\:bg-blue-900\/20 {
+  background-color: #243d75 !important;
+}
+
+body.dark .dark\:bg-orange-900\/20 {
+  background-color: #67442c !important;
+}
+
+body.dark .dark\:bg-red-900\/20 {
+  background-color: #332830 !important;
+}
+
+body.dark .dark\:bg-green-900\/20 {
+  background-color: #1f3235 !important;
+}
